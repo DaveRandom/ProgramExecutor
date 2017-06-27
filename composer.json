@@ -1,0 +1,18 @@
+{
+    "name": "daverandom/program-executor",
+    "description": "Object-oriented wrapper for PHP program execution functions",
+    "minimum-stability": "stable",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Chris Wright",
+            "email": "chris.wright@redstarfm.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+    },
+    "autoload": {
+        "psr-4": {"DaveRandom\\ProgramExecutor\\": "src/"}
+    }
+}
