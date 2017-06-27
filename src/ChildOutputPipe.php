@@ -18,7 +18,7 @@ final class ChildOutputPipe extends ChildPipe
 
     public function read(int $length = 1024): string
     {
-        if ($this->isOpen()) {
+        if (!$this->isOpen()) {
             throw new \LogicException("Cannot read from pipe #{$this->getId()}: pipe closed");
         }
 

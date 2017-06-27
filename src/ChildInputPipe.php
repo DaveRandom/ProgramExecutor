@@ -11,7 +11,7 @@ final class ChildInputPipe extends ChildPipe
 
     public function write(string $data): void
     {
-        if ($this->isOpen()) {
+        if (!$this->isOpen()) {
             throw new \LogicException("Cannot write to pipe #{$this->getId()}: pipe closed");
         }
 
